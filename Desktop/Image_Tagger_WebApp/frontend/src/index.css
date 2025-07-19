@@ -1,0 +1,96 @@
+/* Styles for selected card */
+.image-card.selected {
+  border-color: var(--indigo);
+  box-shadow: 0 0 0 3px var(--indigo);
+}
+
+.selection-checkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Styles for the new form */
+.form-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.group-form {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.group-form h3 {
+  text-align: left;
+  margin-top: 0;
+  color: var(--indigo);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group input, .form-group select {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+}
+
+.confirm-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--indigo);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.confirm-button:hover {
+  background-color: #3a006f;
+}
+
+.card-status {
+  padding: 1rem;
+  font-weight: 500;
+  color: #6c757d;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-status.error {
+  color: #dc3545; /* Red */
+}
+
+.image-card.processing .thumbnail {
+  filter: blur(2px);
+}
